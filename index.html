@@ -1,210 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WELCOME TO OUR COURSE GUIDE!!</title>
-    <style>
-        nav a{
-            text-decoration:none;
-            color:white;
-            background-color: black;
-            text-align:center;
-            padding: 20px;
-        }
-        nav{
-            background-color: black;
-            display: flex;
-        }
-        nav a:hover{
-            color:tomato;
-        }
-        h1{
-            color: red;
-            text-align: center;
-            margin-top: 20px;
-        }
-        table,tr,th,td{
-            border:2px solid black;
-        }
-        a{
-            text-decoration:none;
-            color:white;
-            background-color:blue;
-            text-align:center;
-            padding: 20px;
-        }
-        th{
-            background-color: coral;
-        }
-        td{
-            background-color: cornflowerblue;
-        }
-        iframe{
-            border: 1px solid black;
-        }
-        body {
-            background-image: url('web.jpeg');
-            background-size: cover;
-            background-attachment: fixed;
-        }
-        h2 {
-            color: red;
-            margin-top: 20px;
-        }
-        section {
-            text-align: center;
-        }
-        iframe {
-            border: 1px solid black;
-            margin-bottom: 20px;
-        }
-        #topBtn {
-            display:none;
-            position:fixed;
-            bottom:20px;
-            right:20px;
-            background:tomato;
-            color:white;
-            border:none;
-            padding:10px 15px;
-            border-radius:8px;
-            cursor:pointer;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WELCOME TO OUR COURSE GUIDE!!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("web.jpeg");
+      background-size: cover;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      padding: 10px;
+      text-align: center;
+    }
+
+    header a {
+      text-decoration: none;
+      color: white;
+      background-color: blue;
+      padding: 10px 20px;
+      border-radius: 6px;
+    }
+
+    h1 {
+      color: red;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    nav {
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 15px 20px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: tomato;
+      transform: scale(1.1);
+    }
+
+    h2 {
+      color: red;
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    section {
+      text-align: center;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 1000px;
+    }
+
+    .video-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .video-container iframe {
+      flex: 1 1 300px;
+      max-width: 420px;
+      aspect-ratio: 16/9;
+      border: 1px solid black;
+      border-radius: 8px;
+    }
+
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 90%;
+      max-width: 800px;
+    }
+
+    table,
+    tr,
+    th,
+    td {
+      border: 2px solid black;
+    }
+
+    th {
+      background-color: coral;
+      padding: 10px;
+    }
+
+    td {
+      background-color: cornflowerblue;
+      padding: 8px;
+    }
+
+    #topBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: tomato;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button.bg-btn {
+      margin-left: 20px;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 6px;
+      border: none;
+      background-color: green;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <a href="form.html">PAY NOW FOR ONLINE COURSES</a>
-        <h1>WED</h1>  
-    </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">college review</a>
-        <a href="#">courses</a>
-        <a href="#">study materials</a>
-        <a href="#">login</a>
-        <a href="about.html">Success story</a>
-    </nav>
-    <main>
-        <section>
-            <h2>courses</h2>
-            <iframe width="420" height="345" src="https://www.youtube.com/embed/O5hShUO6wxs?autoplay=1"></iframe>
-            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1"></iframe>
-            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1"></iframe>       
-        </section>
-        <section>
-            <h2>college reviews</h2>
-            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1"></iframe>
-            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1"></iframe>
-            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1"></iframe>  
-        </section>
-        <section>
-            <h2>study materials</h2>
-            <a href="https://www.youtube.com/watch?v=Pt1KGG26RKU&list=PLB6916D3B5267555C">youtube playlist</a>
-            <a href="https://www.udemy.com/course/web-development-bootcamp/">udemy course</a>
-            <a href="https://www.coursera.org/learn/web-development">coursera course</a>
-            <a href="https://www.edx.org/learn/web-development">edx course</a>
-            <a href="https://www.linkedin.com/learning/paths/web-development-foundations">linkedin learning course</a>
-            <a href="https://www.codecademy.com/learn/learn-web">codecademy course</a>
-        </section>
-    </main>
+  <header>
+    <a href="form.html">PAY NOW FOR ONLINE COURSES</a>
+    <h1>WED</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">College Review</a>
+    <a href="#">Courses</a>
+    <a href="#">Study Materials</a>
+    <a href="#">Login</a>
+    <a href="about.html">Success Story</a>
+  </nav>
+
+  <main>
     <section>
-        <h2>DETAILS</h2>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Email</th>
-            </tr>
-            <tr>
-                <td>John Doe</td>
-                <td>25</td>
-                <td>johndoe@example.com</td>
-            </tr>
-            <tr>
-                <td>Jane Doe</td>
-                <td>30</td>
-                <td>janedoe@example.com</td>
-            </tr>
-            <tr>
-                <td>Mike Doe</td>
-                <td>28</td>
-                <td>mikedoe@example.com</td>
-            </tr>
-        </table>
+      <h2>Courses</h2>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe>
+        <iframe src="https://www.youtube.com/embed/Pt1KGG26RKU?autoplay=1&mute=1"></iframe>
+        <iframe src="https://www.youtube.com/embed/5bMdjkfvONE?autoplay=1&mute=1"></iframe>
+      </div>
     </section>
 
+    <section>
+      <h2>College Reviews</h2>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/1A1kWwzFNAc?autoplay=1&mute=1"></iframe>
+        <iframe src="https://www.youtube.com/embed/qqkT9uK4Q9Y?autoplay=1&mute=1"></iframe>
+        <iframe src="https://www.youtube.com/embed/6stlCkUDG_s?autoplay=1&mute=1"></iframe>
+      </div>
+    </section>
 
-    <button id="topBtn">⬆ Top</button>
+    <section>
+      <h2>Study Materials</h2>
+      <p>
+        <a href="https://www.youtube.com/watch?v=Pt1KGG26RKU&list=PLB6916D3B5267555C">YouTube Playlist</a> |
+        <a href="https://www.udemy.com/course/web-development-bootcamp/">Udemy Course</a> |
+        <a href="https://www.coursera.org/learn/web-development">Coursera Course</a> |
+        <a href="https://www.edx.org/learn/web-development">edX Course</a> |
+        <a href="https://www.linkedin.com/learning/paths/web-development-foundations">LinkedIn Learning</a> |
+        <a href="https://www.codecademy.com/learn/learn-web">Codecademy</a>
+      </p>
+    </section>
+  </main>
 
-    
-    <script>
-       
-        window.onload = function() {
-            let greeting;
-            const hour = new Date().getHours();
-            if (hour < 12) {
-                greeting = "☀️ Good Morning!";
-            } else if (hour < 18) {
-                greeting = "🌤️ Good Afternoon!";
-            } else {
-                greeting = "🌙 Good Evening!";
-            }
-            const h1 = document.querySelector("h1");
-            h1.innerHTML = greeting + " Welcome to WED!";
-        };
+  <section>
+    <h2>Details</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>John Doe</td>
+        <td>25</td>
+        <td>johndoe@example.com</td>
+      </tr>
+      <tr>
+        <td>Jane Doe</td>
+        <td>30</td>
+        <td>janedoe@example.com</td>
+      </tr>
+      <tr>
+        <td>Mike Doe</td>
+        <td>28</td>
+        <td>mikedoe@example.com</td>
+      </tr>
+    </table>
+  </section>
 
-    
-        function changeBackground() {
-            const colors = ["lightblue", "lightgreen", "lavender", "peachpuff", "lightyellow"];
-            document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-        }
+  <button id="topBtn">⬆ Top</button>
 
-        
-        const bgBtn = document.createElement("button");
-        bgBtn.textContent = " Change Background";
-        bgBtn.style.marginLeft = "20px";
-        bgBtn.style.padding = "10px";
-        bgBtn.style.cursor = "pointer";
-        document.querySelector("header").appendChild(bgBtn);
-        bgBtn.addEventListener("click", changeBackground);
+  <script>
+    // Greeting based on time
+    window.onload = function () {
+      let greeting;
+      const hour = new Date().getHours();
+      if (hour < 12) {
+        greeting = "☀️ Good Morning!";
+      } else if (hour < 18) {
+        greeting = "🌤️ Good Afternoon!";
+      } else {
+        greeting = "🌙 Good Evening!";
+      }
+      const h1 = document.querySelector("h1");
+      h1.innerHTML = greeting + " Welcome to WED!";
+    };
 
-      
-        const rows = document.querySelectorAll("table tr");
-        rows.forEach(row => {
-            row.addEventListener("mouseover", () => {
-                row.style.backgroundColor = "lightyellow";
-            });
-            row.addEventListener("mouseout", () => {
-                row.style.backgroundColor = "";
-            });
-        });
+    // Background change
+    function changeBackground() {
+      const colors = ["lightblue", "lightgreen", "lavender", "peachpuff", "lightyellow"];
+      document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+    }
 
-    
-        let topBtn = document.getElementById("topBtn");
-        window.onscroll = function() {
-            if (document.documentElement.scrollTop > 100) {
-                topBtn.style.display = "block";
-            } else {
-                topBtn.style.display = "none";
-            }
-        };
-        topBtn.onclick = function() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        };
+    const bgBtn = document.createElement("button");
+    bgBtn.textContent = "Change Background";
+    bgBtn.classList.add("bg-btn");
+    document.querySelector("header").appendChild(bgBtn);
+    bgBtn.addEventListener("click", changeBackground);
 
-        
-        const navLinks = document.querySelectorAll("nav a");
-        navLinks.forEach(link => {
-            link.addEventListener("mouseover", () => {
-                lik.style.transform = "scale(1.2)";
-                link.style.transition = "0.3s";
-            });
-            link.addEventListener("mouseout", () => {
-                link.style.transform = "scale(1)";
-            });
-        });
-    </script>
+    // Table row hover effect
+    const rows = document.querySelectorAll("table tr");
+    rows.forEach((row) => {
+      row.addEventListener("mouseover", () => {
+        row.style.backgroundColor = "lightyellow";
+      });
+      row.addEventListener("mouseout", () => {
+        row.style.backgroundColor = "";
+      });
+    });
+
+    // Scroll to top button
+    let topBtn = document.getElementById("topBtn");
+    window.onscroll = function () {
+      if (document.documentElement.scrollTop > 100) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+    };
+    topBtn.onclick = function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+  </script>
 </body>
 </html>
