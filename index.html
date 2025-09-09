@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO OUR COURSE GUIDE!!</title>
+    <style>
+        nav a{
+            text-decoration:none;
+            color:white;
+            background-color: black;
+            text-align:center;
+            padding: 20px;
+        }
+        nav{
+            background-color: black;
+            display: flex;
+        }
+        nav a:hover{
+            color:tomato;
+        }
+        h1{
+            color: red;
+            text-align: center;
+            margin-top: 20px;
+        }
+        table,tr,th,td{
+            border:2px solid black;
+        }
+        a{
+            text-decoration:none;
+            color:white;
+            background-color:blue;
+            text-align:center;
+            padding: 20px;
+        }
+        th{
+            background-color: coral;
+        }
+        td{
+            background-color: cornflowerblue;
+        }
+        iframe{
+            border: 1px solid black;
+        }
+        body {
+            background-image: url('web.jpeg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        h2 {
+            color: red;
+            margin-top: 20px;
+        }
+        section {
+            text-align: center;
+        }
+        iframe {
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+        #topBtn {
+            display:none;
+            position:fixed;
+            bottom:20px;
+            right:20px;
+            background:tomato;
+            color:white;
+            border:none;
+            padding:10px 15px;
+            border-radius:8px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="form.html">PAY NOW FOR ONLINE COURSES</a>
+        <h1>WED</h1>  
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">college review</a>
+        <a href="#">courses</a>
+        <a href="#">study materials</a>
+        <a href="#">login</a>
+        <a href="about.html">Success story</a>
+    </nav>
+    <main>
+        <section>
+            <h2>courses</h2>
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/O5hShUO6wxs?autoplay=1"></iframe>
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1"></iframe>
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1"></iframe>       
+        </section>
+        <section>
+            <h2>college reviews</h2>
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1"></iframe>
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1"></iframe>
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1"></iframe>  
+        </section>
+        <section>
+            <h2>study materials</h2>
+            <a href="https://www.youtube.com/watch?v=Pt1KGG26RKU&list=PLB6916D3B5267555C">youtube playlist</a>
+            <a href="https://www.udemy.com/course/web-development-bootcamp/">udemy course</a>
+            <a href="https://www.coursera.org/learn/web-development">coursera course</a>
+            <a href="https://www.edx.org/learn/web-development">edx course</a>
+            <a href="https://www.linkedin.com/learning/paths/web-development-foundations">linkedin learning course</a>
+            <a href="https://www.codecademy.com/learn/learn-web">codecademy course</a>
+        </section>
+    </main>
+    <section>
+        <h2>DETAILS</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>25</td>
+                <td>johndoe@example.com</td>
+            </tr>
+            <tr>
+                <td>Jane Doe</td>
+                <td>30</td>
+                <td>janedoe@example.com</td>
+            </tr>
+            <tr>
+                <td>Mike Doe</td>
+                <td>28</td>
+                <td>mikedoe@example.com</td>
+            </tr>
+        </table>
+    </section>
+
+
+    <button id="topBtn">⬆ Top</button>
+
+    
+    <script>
+       
+        window.onload = function() {
+            let greeting;
+            const hour = new Date().getHours();
+            if (hour < 12) {
+                greeting = "☀️ Good Morning!";
+            } else if (hour < 18) {
+                greeting = "🌤️ Good Afternoon!";
+            } else {
+                greeting = "🌙 Good Evening!";
+            }
+            const h1 = document.querySelector("h1");
+            h1.innerHTML = greeting + " Welcome to WED!";
+        };
+
+    
+        function changeBackground() {
+            const colors = ["lightblue", "lightgreen", "lavender", "peachpuff", "lightyellow"];
+            document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        
+        const bgBtn = document.createElement("button");
+        bgBtn.textContent = " Change Background";
+        bgBtn.style.marginLeft = "20px";
+        bgBtn.style.padding = "10px";
+        bgBtn.style.cursor = "pointer";
+        document.querySelector("header").appendChild(bgBtn);
+        bgBtn.addEventListener("click", changeBackground);
+
+      
+        const rows = document.querySelectorAll("table tr");
+        rows.forEach(row => {
+            row.addEventListener("mouseover", () => {
+                row.style.backgroundColor = "lightyellow";
+            });
+            row.addEventListener("mouseout", () => {
+                row.style.backgroundColor = "";
+            });
+        });
+
+    
+        let topBtn = document.getElementById("topBtn");
+        window.onscroll = function() {
+            if (document.documentElement.scrollTop > 100) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+        };
+        topBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+
+        
+        const navLinks = document.querySelectorAll("nav a");
+        navLinks.forEach(link => {
+            link.addEventListener("mouseover", () => {
+                lik.style.transform = "scale(1.2)";
+                link.style.transition = "0.3s";
+            });
+            link.addEventListener("mouseout", () => {
+                link.style.transform = "scale(1)";
+            });
+        });
+    </script>
+</body>
+</html>
